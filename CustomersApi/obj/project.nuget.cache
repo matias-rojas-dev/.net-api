@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jErES9syvuxfrx51mWjxZhF7IT+FQS+3RwascUeXibcjk5eiCima5uzl+eMJ7GYZ6Zvpcfm0Anx9H68zSE17Iw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maigr\\source\\repos\\CustomersApi\\CustomersApi\\CustomersApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maigr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\maigr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\maigr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\maigr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\maigr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\maigr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
