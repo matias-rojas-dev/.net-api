@@ -15,35 +15,50 @@ namespace CustomersApi.Controllers
 
         // api/customers
         [HttpGet()]
-        public async Task<List<CustomerDto>> GetCustomer()
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CustomerDto))] // mensaje de petición exitosa
+        public async Task<IActionResult> GetCustomers()
         {
             throw new NotImplementedException();
         }
 
         // api/customer/{id}
         [HttpGet("{id}")]
-        public async Task<CustomerDto> GetCustomers(long id)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CustomerDto))] // mensaje de petición exitosa
+        [ProducesResponseType(StatusCodes.Status404NotFound)] // mensaje de petición no encontrada
+        // IActionResult: nos permite devolver además de un valor de un dat, el status code la petición
+        public async Task<IActionResult> GetCustomer(long id)
         {
-            throw new NotImplementedException();
+            var vacio = new CustomerDto();
+
+            return new OkObjectResult(vacio); // 200
+
         }
 
+        // api/customer/{id}
         [HttpDelete("{id}")]
-        public async Task <bool> DeleteCustomer(long id)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))] // mensaje de petición exitosa
+        public async Task <IActionResult> DeleteCustomer(long id)
         {
             throw new NotImplementedException();
 
         }
 
+        // api/customer/{id}
         [HttpPost]
-        public async Task<CustomerDto> CreateCustomer(CreateCustomerDto customer)
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CustomerDto))]
+        public async Task<IActionResult> CreateCustomer(CreateCustomerDto customer)
         {
-            throw new NotImplementedException();
+            var vacio = new CustomerDto();
+
+            return new CreatedResult($"https://localhost:7090/api/customer/{vacio.Id}", null);
 
         }
 
-
+        // api/customer
         [HttpPut]
-        public async Task<CustomerDto> UpdateCustomer(CustomerDto customer)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CustomerDto))] // mensaje de petición exitosa
+        [ProducesResponseType(StatusCodes.Status404NotFound)] // mensaje de petición no encontrada
+        public async Task<IActionResult> UpdateCustomer(CustomerDto customer)
         {
             throw new NotImplementedException();
 
